@@ -14,7 +14,6 @@ endfunction
 
 
 pr_blocking = input("Enter probability of blocking "); // Probability of blocking for particular system.
-pr_delay = input("Enter probability of block call delay "); //Probabily of blocked call delayed for particular system.
 y = input("Enter call rate "); //Average number of calls per minute
 H = input("Enter the avarage call duration "); //Average call duration in minute
 c = input("Enter number of channels "); //Number of channel
