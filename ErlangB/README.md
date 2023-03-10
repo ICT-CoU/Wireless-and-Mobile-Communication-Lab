@@ -16,7 +16,6 @@ endfunction
 
 
 pr_blocking = input("Enter probability of blocking "); 
-pr_delay = input("Enter probability of block call delay "); 
 y = input("Enter call rate "); 
 H = input("Enter the avarage call duration "); 
 c = input("Enter number of channels "); 
@@ -37,4 +36,18 @@ disp('Maximum traffic intensity is ', value);
 u = value/Au;
 disp("No. of users are accomodated ", u);
 break;
+```
+
+Output
+
+```matlab
+Enter probability of blocking 0.01
+Enter call rate 3/60
+Enter the avarage call duration 2 (minutes)
+Enter number of channels 50
+
+//Output
+no. of channel =  50
+Maximum traffic intensity is  38
+No. of users are accomodated  380
 ```
