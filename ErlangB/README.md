@@ -1,6 +1,6 @@
 ### Calculates maximum traffic intensity and maximum no. of users accomodated in Erlang B system for given no of Channels.
 
-```
+```matlab
 clc;
 clear;
 
