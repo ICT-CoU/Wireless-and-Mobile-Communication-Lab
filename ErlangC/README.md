@@ -5,7 +5,7 @@
 clc;
 clear;
 
-function [p]=ErlangC(A, N) //Calculate probabibility of blocked call delayed in Erlang C System.
+function [p]=ErlangC(A, N)
     temp = 0;
     for k=0:N-1
         temp = temp + A^k/factorial(k);
@@ -15,17 +15,17 @@ function [p]=ErlangC(A, N) //Calculate probabibility of blocked call delayed in 
 endfunction
 
 
-pr_delay = input("Enter probability of block call delay "); //Probabily of blocked call delayed for particular system.
-y = input("Enter call rate "); //Average number of calls per minute
-H = input("Enter the avarage call duration "); //Average call duration in minute
-c = input("Enter number of channels "); //Number of channel
+pr_delay = input("Enter probability of block call delay ");
+y = input("Enter call rate ");
+H = input("Enter the avarage call duration "); 
+c = input("Enter number of channels "); 
 disp("no. of channel = ", c);
 
-Au = y*H; //Traffic intensity per user
+Au = y*H; 
 p=0;
 for A=1:1:100
     [p] = ErlangC(A,c);
-    if(p>pr_delay) //Find maximum traffic intensity for entered per delay
+    if(p>pr_delay) 
         value = A;
         break;    
      end
