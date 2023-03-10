@@ -1,7 +1,4 @@
-
-### Calculates maximum traffic intensity and maximum no. of users accomodated in Erlang C system for given no of Channels.
-
-```matlab
+// Calculates maximum traffic intensity and maximum no. of users accomodated in Erlang C system for given no of Channels.
 clc;
 clear;
 
@@ -35,20 +32,4 @@ disp('For block call delay probability of', pr_delay);
 disp('Maximum traffic intensity is ', value);
 u = value/Au;
 disp("No. of users are accomodated ", u);
-```
-
-## Output
-
-```matlab
-Enter probability of block call delay 0.1
-Enter call rate 3/60
-Enter the avarage call duration 2 (minutes)
-Enter number of channels 50
-
-//Output
-no. of channel =  50
-For block call delay probability of 0.1
-Maximum traffic intensity is  41
-No. of users are accomodated  410
-```
 
