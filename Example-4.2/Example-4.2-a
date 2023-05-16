@@ -1,0 +1,18 @@
+// Constants
+c = 3e8; // Speed of light in meters per second
+f = 900e6; // Carrier frequency in Hertz
+
+// Wavelength calculation
+lambda = c / f;
+
+// Length of the quarter-wavelength monopole antenna
+length = lambda / 4;
+length_mm = round(length * 1000); // Convert to millimeters
+
+// Effective aperture calculation
+ae = (lambda^2) / (4*%pi);
+ae_cm2 = round(ae * 10000); // Convert to square centimeters
+
+// Display the results
+disp("Length of the receiving antenna: " + string(length_mm) + " mm");
+disp("Effective aperture of the receiving antenna: " + string(ae_cm2) + " cm^2");
