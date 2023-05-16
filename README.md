@@ -22,6 +22,17 @@
     <li>
      <a href="./Example-3.7/">Example 3.7</a>
     </li>
+    <li>
+     <a href="./Example-4.2/">Example 4.2</a>
+    </li>
+    <li>
+     <a href="./Example-4.6/">Example 4.6</a>
+    </li>
+    <li>
+     <a href="./Example-4.10/">Example 4.10</a>
+    </li>
+
+    
 </ul>
 
 
