@@ -1,6 +1,4 @@
-Example-4.10
 
-```
 // Constants for suburban environment
 A = 69.55;
 B = 26.16;
@@ -27,4 +25,3 @@ Pr = EIRP_dBm - PL + Gr;
 disp("Mean Path Loss: " + string(PL) + " dB");
 disp("EIRP: " + string(EIRP_dBm) + " dBm");
 disp("Received power: " + string(Pr) + " dBm");
-```
